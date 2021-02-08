@@ -1,0 +1,55 @@
+.header__subnav {
+    padding: 1.3rem 7.5rem;
+
+    @include dobble-braekpoint ($desktop-bp) {
+        width: 60rem;
+        padding: 1rem 2rem;
+    }
+
+    @include dobble-braekpoint ($mobile-bp) {
+        display: none;
+    }
+}
+
+.subnav__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+// .subnav__item {
+//     position: relative;
+
+//     &::after {
+//         content: '';
+//         display: block;
+//         width: 4px;
+//         height: 4px;
+//         background: url(/assets/images/Small-arrow.svg) no-repeat;
+//         transform: rotate(90deg);
+//         width: 100%;
+//         height: 100%;
+//         position: absolute;
+//         top: 0;
+//         right: 0;
+
+//         @include dobble-braekpoint ($desktop-bp) {
+//             top: 20px;
+//             right: 0;
+//         }
+//     }
+
+// }
+
+.subnav__link {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 18px;
+    color: inherit;
+    cursor: pointer;
+
+    @include dobble-braekpoint ($desktop-bp) {
+        font-size: 12px;
+        line-height: 15px;
+    }
+}

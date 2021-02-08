@@ -1,0 +1,273 @@
+.main {
+    width: 80rem;
+    margin: 0 auto;
+    padding: 4.3rem 9.3rem;
+
+    @include dobble-braekpoint ($desktop-bp) {
+        width: 60rem;
+        padding: 2rem 1.5rem;
+    }
+
+    @include dobble-braekpoint ($mobile-bp) {
+        width: 45rem;
+    }
+}
+
+.our-team {
+    width: 100%;
+}
+
+.work-and-about-us {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+
+    @include dobble-braekpoint ($desktop-bp) {
+        margin-top: 1.5rem;
+    }
+
+    @include dobble-braekpoint ($mobile-bp) {
+        flex-direction: column-reverse;
+    }
+}
+
+.main__get-job {
+    width: 45%;
+
+    @include dobble-braekpoint ($mobile-bp) {
+        width: 100%;
+    }
+}
+
+.main__job-title,
+.resume-btn,
+.main__job-text {
+    width: 25rem;
+
+    @include dobble-braekpoint ($desktop-bp) {
+        width: 18rem;
+    }
+
+    @include dobble-braekpoint ($mobile-bp) {
+        width: 25rem;
+        margin: 0 auto;
+    }
+}
+
+.main__job-title {
+    @include dobble-braekpoint ($desktop-bp) {
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+    @include dobble-braekpoint ($mobile-bp) {
+        font-size: 25px;
+        line-height: 33px;
+        padding-top: 1rem;
+    }
+}
+
+.resume-btn {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    height: 4rem;
+    margin-top: 2rem;
+    background-color: #d2001c;
+    box-shadow: 0 4px 4px rgbs(0,0,0, .25);
+    border-radius: 4px;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+
+    @include dobble-braekpoint ($desktop-bp) {
+        font-size: 13px;
+        line-height: 18px;
+    }
+    @include dobble-braekpoint ($mobile-bp) {
+        width: 25rem;
+        margin-left: 155px;
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+.main__job-text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: 3rem;
+    color: #d4d4d4;
+
+    @include dobble-braekpoint ($desktop-bp) {
+        font-size: 10px;
+        line-height: 13px;
+        margin-top: 1.5rem;
+    }
+
+    @include dobble-braekpoint ($mobile-bp) {
+        font-size: 17px;
+        line-height: 20px;
+    }
+}
+
+.main__short-description {
+    width: 55%;
+
+    @include dobble-braekpoint ($mobile-bp) {
+        width: 100%;
+    }
+    
+}
+
+.short__text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    color: #4d4d4d;
+    padding-bottom: 1.5rem;
+
+    @include dobble-braekpoint ($desktop-bp) {
+        font-size: 13px;
+        line-height: 18px;
+        padding-bottom: .8rem;
+    }
+
+    @include dobble-braekpoint ($mobile-bp) {
+        font-size: 23px;
+        line-height: 30px;
+    }
+}
+
+.main__about-us {
+    margin-top: 7rem;
+    position: relative;
+
+    @include dobble-braekpoint ($desktop-bp) {
+        margin-top: 4rem;
+    }
+}
+
+.main__about-us-title {
+    width: 60%;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #222222;
+
+    &::after {
+        content: '';
+        display: block;
+        width: 68%;
+        border-bottom: 1px solid #000000;
+        opacity: .1;
+
+        position: absolute;
+        top: 17px;
+        right: 0;
+
+        @include dobble-braekpoint ($desktop-bp) {
+            width: 80%;
+            top: 11.5px;
+        }
+
+        @include dobble-braekpoint ($mobile-bp) {
+            width: 55%;
+            top: 18px;
+        }
+    }
+
+    @include dobble-braekpoint ($desktop-bp) {
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    @include dobble-braekpoint ($mobile-bp) {
+        font-size: 25px;
+        line-height: 30px;
+    }
+}
+
+.about__us-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+
+    @include dobble-braekpoint ($desktop-bp) {
+        margin-top: 2rem;
+    }
+
+    @include dobble-braekpoint ($mobile-bp) {
+        flex-direction: column;
+    }
+}
+
+.about__us-item {
+
+    &:nth-last-child(1){
+        padding-right: 20px;
+
+        @include dobble-braekpoint ($desktop-bp) {
+            padding-right: 50px;
+        }
+    }
+
+    @include dobble-braekpoint ($mobile-bp) {
+        padding-top: 1.5rem;
+    }
+}
+
+
+.about__us-link {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+
+    padding-bottom: 1px;
+    border-bottom: 1px solid #4d4d4d;
+    color: #4d4d4d;
+    cursor: pointer;
+    // position: relative;
+    // overflow: visible;
+
+    // &::after {
+    //     content: '';
+    //     display: block;
+    //     width: 4px;
+    //     height: 8px;
+    //     background: url(/assets/images/Small-arrow.svg) no-repeat;
+    //     width: 100%;
+    //     height: 100%;
+    //     position: absolute;
+    //     top: 9px;
+    //     right: 255px;
+
+    //     @include dobble-braekpoint ($desktop-bp) {
+    //         top: 6px;
+    //         right: 80px;
+    //     }
+    // }
+
+    &.active {
+        border-bottom: 1px solid #d2001c;
+        color: #d2001c;
+    }
+
+    @include dobble-braekpoint ($desktop-bp) {
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+    @include dobble-braekpoint ($mobile-bp) {
+        font-size: 23px;
+        line-height: 30px;
+    }
+}
+
+
+

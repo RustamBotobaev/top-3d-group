@@ -1,0 +1,163 @@
+.header__top,
+.header__main,
+.header__nav,
+.header__subnav {
+    width: 80rem;
+    margin: 0 auto;
+    @include dobble-braekpoint ($desktop-bp) {
+        width: 60rem;
+    }
+
+    @include dobble-braekpoint ($mobile-bp) {
+        width: 45rem;
+    }
+}
+
+.header__top {
+    display: flex;
+    padding: .4rem 7.5rem ;
+
+    @include dobble-braekpoint ($desktop-bp) {
+        padding: .7rem;
+    }
+}
+
+.header__top-left {
+    width: 60%;
+    display: flex;
+
+    @include dobble-braekpoint ($mobile-bp) {
+        display: none;
+    }
+}
+
+.location-dropdown,
+.header__phone-call,
+.header__worktime {
+    font-style: normal;
+    font-weight: $header-font-weight;
+    font-size: $header-font-size;
+    line-height: $header-line-height;
+    color: inherit;
+
+    @include dobble-braekpoint ($desktop-bp) {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 12px;
+    }
+}
+
+.location-dropdown {
+    position: relative;
+
+    &::after {
+        content: '';
+        display: block;
+        width: 4px;
+        height: 4px;
+        background: url(/assets/images/Small-arrow.svg) no-repeat;
+        transform: rotate(90deg);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        @include dobble-braekpoint ($desktop-bp) {
+            top: 48px;
+            left: 54px;
+        }
+    }
+}
+
+.header__phone-call {
+    padding-left: 2rem;
+
+    @include dobble-braekpoint ($desktop-bp) {
+        padding-left: 1.5rem;
+    }
+}
+
+.header__worktime {
+    padding-left: 1rem;
+    padding-top: .2rem;
+
+    @include dobble-braekpoint ($desktop-bp) {
+        padding-left: 1.5rem;
+    }
+}
+
+.header__right {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+
+    @include dobble-braekpoint ($mobile-bp) {
+        width: 100%;
+        justify-content: space-around;
+    }
+}
+
+.header__massage,
+.header__massage-to {
+    a {
+        font-style: normal;
+        font-weight: $header-font-weight;
+        font-size: $header-font-size;
+        line-height: $header-line-height;
+        color: inherit;
+
+        @include dobble-braekpoint ($desktop-bp) {
+            font-weight: 600;
+            font-size: 10px;
+            line-height: 10px;
+        }
+
+        @include dobble-braekpoint ($mobile-bp) {
+            font-size: 20px;
+            line-height: 15px;
+        }
+    }
+    
+}
+
+.header__massage-to,
+.header__social {
+    padding-left: 2.2rem;
+
+    @include dobble-braekpoint ($desktop-bp) {
+        padding-left: 1rem;
+    }
+
+    @include dobble-braekpoint ($mobile-bp) {
+        padding: 0;
+    }
+}
+
+.header__social {
+    a:not(:first-child) {
+        padding-left: 1.1rem;
+
+        @include dobble-braekpoint ($desktop-bp) {
+            padding-left: 1rem;
+        }
+
+        @include dobble-braekpoint ($mobile-bp) {
+            padding-left: 1.5rem;
+        }
+    }
+}
+
+.header__social-phone,
+.header__social-scype,
+.header__social-telegram {
+    width: 13px;
+    @include dobble-braekpoint ($desktop-bp) {
+        width: 15px;
+    }
+
+    @include dobble-braekpoint ($mobile-bp) {
+        width: 30px;
+    }
+}
+

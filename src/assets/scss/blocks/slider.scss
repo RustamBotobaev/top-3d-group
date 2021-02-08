@@ -1,0 +1,167 @@
+.main__slider {
+    width: 90.5rem;
+    height: 34.3rem;
+    margin: 4.3rem 2.7rem 6.5rem;
+    
+    background-color: #f9f9f9;
+    overflow: hidden;
+
+    @include dobble-braekpoint ($desktop-bp) {
+        width: 60rem;
+        height: auto;
+        margin: 2rem;
+    }
+
+    @include dobble-braekpoint ($tablet-bp) {
+        margin: 0;
+    }
+
+    @include dobble-braekpoint ($mobile-bp) {
+        width: 45rem;
+        margin: 0;
+    }
+}
+
+.slider__wrapper {
+    width: 70rem;
+    margin-left: 100px;
+    padding: 3.7rem 8.5rem;
+    position: relative;
+    overflow: hidden;
+
+    @include dobble-braekpoint ($desktop-bp) {
+        width: 60rem;
+        padding: 1rem;
+        margin-left: 0;
+    }
+
+    @include dobble-braekpoint ($tablet-bp) {
+        margin-left: 0;
+    }
+
+    @include dobble-braekpoint ($mobile-bp) {
+        width: 45rem;
+        margin: 0;
+    }
+}
+
+.main__slider-title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 43px;
+
+    @include dobble-braekpoint ($desktop-bp) {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    @include dobble-braekpoint ($mobile-bp) {
+        font-size: 26px;
+        line-height: 36px;
+    }
+}
+
+.slider__items {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    transition: transform 0.6s ease;
+
+    @include dobble-braekpoint ($desktop-bp) {
+        gap: 30px;
+    }
+}
+
+.slider__item {
+    width: 55%;
+    margin-top: 6rem;
+
+    @include dobble-braekpoint ($desktop-bp) {
+        margin-top: 3rem;
+        min-width: 0;
+    }
+
+    @include dobble-braekpoint ($mobile-bp) {
+        min-width: 100%;
+        margin-left: 4.5rem;
+    }
+}
+
+.embed {
+    display: flex;
+}
+
+.slider__control {
+    position: absolute;
+    top: 70px;
+    right: 450px;
+    width: 40px;
+    height: 40px;
+    
+    border: 1px solid #e5e5e5;
+
+    @include dobble-braekpoint ($desktop-bp) {
+        width: 20x;
+        height: 20px;
+        top: 30px;
+    }
+
+    @include dobble-braekpoint ($desktop-bp) {
+        height: 30px;
+    }
+
+    @include dobble-braekpoint ($mobile-bp) {
+        top: 25px;
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.slider__control-prev {
+    right: 40px;
+    background: url(/assets/images/Prev.svg)15px 10px no-repeat;
+
+    @include dobble-braekpoint ($desktop-bp) {
+        right: 60px;
+        background: url(/assets/images/Prev.svg)15px 5px no-repeat;
+        background-size: 9px;
+    }
+
+    @include dobble-braekpoint ($tablet-bp) {
+        right: 50px;
+        background: url(/assets/images/Prev.svg)15px 5px no-repeat;
+        background-size: 15px;
+    }
+
+    @include dobble-braekpoint ($mobile-bp) {
+        right: 80px;
+        background: url(/assets/images/Prev.svg)15px 5px no-repeat;
+        background-size: 12px;
+    }
+}
+
+.slider__control-next {
+    right: 0;
+    background: url(/assets/images/Next.svg) 10px 10px no-repeat;
+
+    @include dobble-braekpoint ($desktop-bp) {
+        right: 20px;
+        background: url(/assets/images/Next.svg) 10px 5px no-repeat;
+        background-size: 9px;
+    }
+
+    @include dobble-braekpoint ($tablet-bp) {
+        right: 10px;
+        background: url(/assets/images/Next.svg) 10px 5px no-repeat;
+        background-size: 15px;
+    }
+
+    @include dobble-braekpoint ($mobile-bp) {
+        right: 40px;
+        background: url(/assets/images/Next.svg)10px 5px no-repeat;
+        background-size: 12px;
+
+    }
+}

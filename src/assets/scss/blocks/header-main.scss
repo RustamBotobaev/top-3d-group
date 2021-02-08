@@ -1,0 +1,246 @@
+.header__main {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 7.5rem .8rem;
+    position: relative;
+
+    @include dobble-braekpoint ($desktop-bp) {
+        width: 60rem;
+        padding: 1rem 2rem;
+    }
+
+    @include dobble-braekpoint ($mobile-bp) {
+        width: 45rem;
+    }
+}
+
+.header__slogan {
+    font-style: italic;
+    font-weight: normal;
+    font-size: $header-font-size;
+    line-height: $header-line-height;
+
+    padding-top: 1rem;
+    
+    @include dobble-braekpoint ($desktop-bp) {
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    @include dobble-braekpoint ($mobile-bp) {
+        display: none;
+    }
+}
+
+.header__achievment {
+    width: 105px;
+    height: 60px;
+    box-shadow: 0 4px 4px rgba(0,0,0, .25);
+    border-radius: 8px;
+    position: relative;
+    
+    img {
+        width: 81px;
+        height: 50px;
+
+        position: absolute;
+        top: 1px;
+        left: 10px;
+
+        @include dobble-braekpoint ($mobile-bp) {
+            display: none;
+        }
+    }
+
+    @include dobble-braekpoint ($mobile-bp) {
+        display: none;
+    }
+}
+
+.search {
+    width: 24.5rem;
+    height: 4.4rem;
+    margin-top: .7rem;
+    position: relative;
+
+    @include dobble-braekpoint ($desktop-bp) {
+        width: 20rem;
+        height: 3rem;
+    }
+
+    @include dobble-braekpoint ($mobile-bp) {
+        width: 30rem;
+        height: 4rem;
+        margin-right: 80px;
+    }
+}
+
+.search__input {
+    width: 100%;
+    height: 44px;
+    border: 1px solid #bdbdbd;
+    border-radius: 4px;
+
+    padding-right: 80px;
+    padding-left: 16px;
+    padding-bottom: 13px;
+    padding-top: 13px;
+
+    @include dobble-braekpoint ($desktop-bp) {
+        font-size: 10px;
+        height: 33px;
+        padding: 6px 50px 6px 10px;
+    }
+
+    @include dobble-braekpoint ($mobile-bp) {
+        font-size: 16px;
+        height: 50px;
+        padding: 10px 70px 10px 15px;
+    }
+}
+
+.search__btn {
+    width: 75px;
+    height: 36px;
+    background: transparent;
+    border: 2px solid #d2001c;
+    border-radius: 4px;
+    color: #d2001c;
+    cursor: pointer;
+
+    position: absolute;
+    top: 4px;
+    right: 3px;
+    z-index: 100;
+
+    @include dobble-braekpoint ($desktop-bp) {
+        width: 60px;
+        height: 25px;
+        font-size: 11px;
+    }
+
+    @include dobble-braekpoint ($mobile-bp) {
+        width: 70px;
+        height: 40px;
+        font-size: 14px;
+    }
+}
+
+.header__login {
+    font-style: normal;
+    font-weight: $header-font-weight;
+    font-size: $header-font-size;
+    line-height: $header-line-height;
+    padding-top: 1.5rem;
+    color: #222222;
+    position: relative;
+
+    width: 24px;
+    height: 24px;
+    
+    &::before {
+            content: '';
+            display: block;
+            width: 24px;
+            height: 24px;
+            background: url(/assets/images/arrow.svg);
+
+            position: absolute;
+            top: 19px;
+            left: -25px;
+
+            @include dobble-braekpoint ($desktop-bp) {
+                top: 15px;
+                left: -25px;
+            }
+
+            @include dobble-braekpoint ($mobile-bp) {
+                display: none;
+            }
+        }
+
+    @include dobble-braekpoint ($desktop-bp) {
+        font-size: 10px;
+        line-height: 15px;
+        padding-top: 1.3rem;
+    }
+
+    @include dobble-braekpoint ($mobile-bp) {
+        display: none;
+    }
+    
+}
+
+.header__bascet {
+    display: flex;
+    width: 10rem;
+    height: 3.6rem;
+
+    @include dobble-braekpoint ($desktop-bp) {
+        width: 8rem;
+        margin-top: .5rem;
+    }
+
+    @include dobble-braekpoint ($mobile-bp) {
+        display: none;
+    }
+}
+
+.bascet-and-product {
+    width: 100%;
+    height: 3.6rem;
+    padding-left: 14px;
+    background-color: #d2001c;
+    box-shadow: 0 4px 4px rgba(0,0,0, .25);
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    cursor: pointer;
+    position: relative;
+
+    &::before {
+        content: '';
+        display: block;
+        width: 24px;
+        height: 24px;
+        background: url(/assets/images/bascet.svg);
+
+        position: absolute;
+        top: 14px;
+        left: 4px;
+
+        @include dobble-braekpoint ($desktop-bp) {
+            top: 9px;
+        }
+
+    }
+
+    @include dobble-braekpoint ($desktop-bp) {
+        height: 2.5rem;
+        font-size: 10px;
+        padding-left: 25px;
+    }
+
+    @include dobble-braekpoint ($mobile-bp) {
+        display: none;
+    }
+}
+
+.nav__toggle {
+    display: none;
+    font-size: 1.5rem;
+    color: #000000;
+    cursor: pointer;
+
+    @include dobble-braekpoint ($mobile-bp) {
+        display: block;
+        width: 3.5rem;
+        height: 3.5rem;
+        padding: 0;
+        background: none;
+        border: none;
+        position: absolute;
+        top: 22px;
+        right: 15px;
+    }
+}

@@ -1,0 +1,11 @@
+@mixin braekpoint ($br) {
+    @media screen and (min-width: $bp) {
+        @content;
+    }
+}
+
+@mixin dobble-braekpoint ($bp) {
+    @media screen and (max-width: $bp) {
+        @content;
+    }
+}

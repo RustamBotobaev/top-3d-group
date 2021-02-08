@@ -1,0 +1,82 @@
+.sidebar {
+    width: 30rem;
+    height: 100vh;
+
+    background-color: #ffffff;
+
+    position: fixed;
+    top: 176.5px;
+    left: -100%;
+    z-index: 1001;
+    transition: .5s;
+    overflow: auto;
+
+    @media screen and (min-width: 568px) {
+        display: none;
+    }
+}
+
+.sidebar__page {
+    padding: .5rem;
+}
+
+.sidebar__header {
+    position: relative;
+}
+
+.sidebar__top {
+    display: flex;
+    flex-direction: column
+}
+
+.sidebar__location {
+    padding-bottom: 1rem;
+}
+
+
+.sidebar__location-dropdown,
+.sidebar__phone,
+.sidebar__worktime {
+    font-size: 20px;
+    line-height: 20px;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+}
+
+.sidebar__phone-call {
+    color: #000000;
+}
+
+.sidebar__close {
+    position: absolute;
+    top: 0;
+    right: 10px;
+
+    font-size: 35px;
+}
+
+.show {
+    left: 0;
+}
+
+.sidebar__content {
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar__nav,
+.sidebar__subnav {
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+
+.sidebar__nav-item,
+.sidebar__subnav-item {
+    padding-bottom: 1rem;
+}
+
+.sidebar__nav-link,
+.sidebar__subnav-link {
+    font-size: 20px;
+    color: inherit;
+}

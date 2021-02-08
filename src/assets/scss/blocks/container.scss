@@ -1,0 +1,17 @@
+.container {
+    width: 100%;
+    max-width: 96rem;
+    margin: 0 auto;
+
+    // @include dobble-braekpoint ($desktop-bp) {
+    //     width: 64rem;
+    // }
+
+    // @include dobble-braekpoint ($tablet-bp) {
+    //     width: 48rem;
+    // }
+
+    // @include dobble-braekpoint ($mobile-bp) {
+    //     width: 45rem;
+    // }
+}

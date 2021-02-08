@@ -1,0 +1,32 @@
+.header__nav {
+    padding-left: 7.5rem;
+    padding-right: 7.5rem;
+
+    @include dobble-braekpoint ($desktop-bp) {
+        width: 60rem;
+        padding: .5rem 2rem;
+    }
+
+    @include dobble-braekpoint ($mobile-bp) {
+        display: none;
+    }
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__link {
+    font-style: normal;
+    font-weight: normal;
+    font-size: $header-font-size;
+    line-height: $header-line-height;
+    color: inherit;
+    cursor: pointer;
+
+    @include dobble-braekpoint ($desktop-bp) {
+        font-size: 12px;
+        line-height: 15px;
+    }
+}

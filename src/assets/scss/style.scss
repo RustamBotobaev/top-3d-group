@@ -1,0 +1,50 @@
+@import 'vars';
+@import 'mixin';
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap');
+
+
+html,
+body {
+    background-color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    color: #000000;
+    margin: 0 auto;
+
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: .5s ease-in-out;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*=== BLOCKS ===*/
+
+@import 'blocks/container';
+@import 'blocks/header';
+@import 'blocks/header-top';
+@import 'blocks/header-main';
+@import 'blocks/header-nav';
+@import 'blocks/header-subnav';
+@import 'blocks/sidebar';
+@import 'blocks/main';
+@import 'blocks/slider';
